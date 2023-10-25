@@ -22,6 +22,7 @@ export default function MainPage() {
           position: [0, 0, 0],
           fov: 40,
         }}
+        className="w-screen h-screen"
       >
         <Suspense fallback={<LoadingPage />}>
           <ambientLight intensity={Math.PI / 1} />

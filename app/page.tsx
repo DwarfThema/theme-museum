@@ -22,7 +22,9 @@ export default function Home() {
 
     if (visibleDiv === 0) setVisibleDiv(1);
     else if (visibleDiv === 1) setVisibleDiv(2);
-    else if (visibleDiv === 2) setVisibleDiv(1);
+    else if (visibleDiv === 2) setVisibleDiv(3);
+    else if (visibleDiv === 3) setVisibleDiv(4);
+    else if (visibleDiv === 4) setVisibleDiv(0);
   };
 
   const handleClickUp = () => {
@@ -41,9 +43,14 @@ export default function Home() {
     if (event.deltaY > 0) {
       if (visibleDiv === 0) setVisibleDiv(1);
       else if (visibleDiv === 1) setVisibleDiv(2);
+      else if (visibleDiv === 2) setVisibleDiv(3);
+      else if (visibleDiv === 3) setVisibleDiv(4);
+      else if (visibleDiv === 4) setVisibleDiv(0);
     } else {
       if (visibleDiv === 1) setVisibleDiv(0);
       else if (visibleDiv === 2) setVisibleDiv(1);
+      else if (visibleDiv === 3) setVisibleDiv(2);
+      else if (visibleDiv === 4) setVisibleDiv(3);
     }
   };
 
@@ -91,9 +98,14 @@ export default function Home() {
     if (deltaY > 0) {
       if (visibleDiv === 1) setVisibleDiv(0);
       else if (visibleDiv === 2) setVisibleDiv(1);
+      else if (visibleDiv === 3) setVisibleDiv(2);
+      else if (visibleDiv === 4) setVisibleDiv(3);
     } else {
       if (visibleDiv === 0) setVisibleDiv(1);
       else if (visibleDiv === 1) setVisibleDiv(2);
+      else if (visibleDiv === 2) setVisibleDiv(3);
+      else if (visibleDiv === 3) setVisibleDiv(4);
+      else if (visibleDiv === 4) setVisibleDiv(0);
     }
   };
 
@@ -172,10 +184,36 @@ export default function Home() {
               <div className="inset-0 absolute flex items-center justify-center z-40  w-screen h-full"></div>
             )}
           </motion.div>
+          <motion.div
+            key="3"
+            className="w-full h-screen  flex justify-center items-center absolute top-0 left-0 bg-yellow-600"
+            initial={{ y: "100%" }}
+            animate={{
+              y: visibleDiv === 3 ? "0%" : visibleDiv > 3 ? "-100%" : "100%",
+            }}
+            transition={transition}
+          >
+            {loading && (
+              <div className="inset-0 absolute flex items-center justify-center z-40  w-screen h-full"></div>
+            )}
+          </motion.div>
+          <motion.div
+            key="4"
+            className="w-full h-screen  flex justify-center items-center absolute top-0 left-0 bg-green-600"
+            initial={{ y: "100%" }}
+            animate={{
+              y: visibleDiv === 4 ? "0%" : visibleDiv > 4 ? "-100%" : "100%",
+            }}
+            transition={transition}
+          >
+            {loading && (
+              <div className="inset-0 absolute flex items-center justify-center z-40  w-screen h-full"></div>
+            )}
+          </motion.div>
         </AnimatePresence>
       </div>
 
-      <div className="absolute bottom-8 w-screen flex justify-center z-20">
+      <div className="absolute bottom-8 w-screen flex justify-center z-30">
         <button onClick={handleClickDown}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
