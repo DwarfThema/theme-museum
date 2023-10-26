@@ -91,7 +91,7 @@ export default function NavBar() {
               className="xl:flex zero:hidden w-[535px] h-fit no-drag"
             />
             <div className="xl:flex zero:hidden w-[88px] h-full " />
-            <div className="xl:w-[577px] xl:py-[42px] zero:w-[300px] zero:py-[80px] items-start justify-center flex flex-col   text-black">
+            <div className="xl:w-[577px] xl:py-0 zero:w-[300px] zero:py-[80px] h-full items-start justify-center flex flex-col text-black">
               <AboutContents title="about">
                 <div className="text-[16px] font-extralight">
                   <Image
