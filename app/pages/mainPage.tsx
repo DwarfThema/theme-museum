@@ -1,26 +1,30 @@
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Suspense, useEffect, useRef } from "react";
-import { Group, MathUtils, MeshLambertMaterial, Vector3 } from "three";
+import { Suspense, useEffect, useRef, useState } from "react";
+import { MathUtils, MeshLambertMaterial } from "three";
 import {
-  CameraControls,
   Cloud,
   Clouds,
   Environment,
-  OrbitControls,
   PerspectiveCamera,
-  Sky,
 } from "@react-three/drei";
 import { isMobile } from "react-device-detect";
 import Balloon from "../src/balloon";
-import LoadingPage from "./loadingPage";
 
 export default function MainPage() {
+  const [fov, setFov] = useState(150);
+
+  useEffect(() => {
+    if (!isMobile) {
+      setFov(40);
+    }
+  }, [isMobile]);
+
   return (
-    <div className="bg-main-base w-screen h-screen flex justify-center items-center no-drag">
+    <div className="bg-main-base w-full h-full flex justify-center items-center no-drag">
       <Canvas
         camera={{
           position: [0, 0, 0],
-          fov: 40,
+          fov: fov,
         }}
         className="w-screen h-screen"
       >
@@ -53,12 +57,22 @@ export default function MainPage() {
 function SkyView() {
   const cameraRef = useRef<THREE.PerspectiveCamera>(null);
 
+  const [camzTarPos, setCamzTarPos] = useState(2.5);
+  const [camzPos, setCamzPos] = useState(-80);
+
+  useEffect(() => {
+    if (isMobile) {
+      setCamzTarPos(5.5);
+      setCamzPos(-50);
+    }
+  }, [isMobile]);
+
   useFrame((state) => {
-    state.camera.lookAt(-1, -7, -1);
+    state.camera.lookAt(-100, -7, -1);
     //카메라 쉐이크 관련 코드
     state.camera.position.x = MathUtils.lerp(
       state.camera.position.x,
-      2.5 - state.mouse.x / 10,
+      camzTarPos - state.mouse.x / 10,
       0.03
     );
     state.camera.position.y = MathUtils.lerp(
@@ -72,7 +86,7 @@ function SkyView() {
       <PerspectiveCamera
         makeDefault
         fov={isMobile ? 42 : 30}
-        position={[2.5, -7, -1]}
+        position={[camzPos, -7, -1]}
         ref={cameraRef}
       />
       <Balloon />

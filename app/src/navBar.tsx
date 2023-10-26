@@ -4,8 +4,9 @@ import { ReactNode, useEffect, useState } from "react";
 import Link from "next/link";
 import mainLogo from "../../public/textures/logo_bk.png";
 import VerticalLogo from "../../public/LogoVertical.png";
-import Supporter from "../../public/suppoter_supporter.png";
-import VivlePark from "../../public/suppoter_vivlepark.png";
+import Supporter from "../../public/Supporter_sm.png";
+import SupporterLg from "../../public/Supporter_lg.png";
+import VivlePark from "../../public/Vivlepark.png";
 import ThemeImg from "../../public/Theme.png";
 import { useProgress } from "@react-three/drei";
 
@@ -34,7 +35,7 @@ export default function NavBar() {
         <Image
           src={mainLogo}
           alt="NavLogo"
-          className="w-[150px] pt-10 pl-11 z-40 fixed top-0 left-0 no-drag"
+          className="xl:w-[150px] xl:pt-10 xl:pl-11 zero:w-[120px] zero:pt-8 zero:pl-5 z-40 fixed top-0 left-0 no-drag"
           quality={30}
         />
       </div>
@@ -44,12 +45,12 @@ export default function NavBar() {
         className="z-40 fixed top-0 right-0 bottom-0 w-[150px] h-[150px] flex items-start justify-end"
       >
         <motion.div
-          className=" w-[60px] h-[60px] m-10 rounded-full bg-white "
+          className=" w-[60px] h-[60px] xl:mt-10 xl:mr-10 zero:mt-7 zero:mr-4 rounded-full bg-white "
           variants={infoBar}
         ></motion.div>
         <button
           onClick={() => toggleOpen()}
-          className="z-50 absolute mr-[57px] mt-[59px] outline-none border-none rounded-[50%]"
+          className="z-50 absolute xl:mr-[57px] xl:mt-[59px] zero:mr-[34px] zero:mt-[49px] outline-none border-none rounded-[50%]"
         >
           <svg width="23" height="23" viewBox="0 0 23 23">
             <Path
@@ -79,26 +80,26 @@ export default function NavBar() {
           animate={isOpen ? "open" : "closed"}
           transition={{ duration: 1, type: "tween" }}
           variants={infoContents}
-          className={`w-screen h-screen z-40  flex justify-center items-center absolute ${
+          className={`w-screen h-screen z-40 flex justify-center items-center absolute ${
             !isOpen ? `hidden` : `flex`
           }`}
         >
-          <div className="w-[1200px] h-[610px] flex items-center">
+          <div className="xl:w-[1200px] xl:h-[610px] xl:mt-0 xl:items-center zero:w-[300px] zero::h-full zero:h-screen zero:items-start flex ">
             <Image
               src={VerticalLogo}
               alt="logo"
-              className="w-[535px] h-fit no-drag"
+              className="xl:flex zero:hidden w-[535px] h-fit no-drag"
             />
-            <div className="w-[88px] h-full " />
-            <div className="w-[577px] flex flex-col items-start py-[42 px]">
+            <div className="xl:flex zero:hidden w-[88px] h-full " />
+            <div className="xl:w-[577px] xl:py-[42px] zero:w-[300px] zero:py-[80px] items-start justify-center flex flex-col   text-black">
               <AboutContents title="about">
-                <div className="text-[16px] font-extralight ">
+                <div className="text-[16px] font-extralight">
                   <Image
                     src={ThemeImg}
-                    className="w-[85px] float-left mr-[19px] no-drag"
+                    className="xl:w-[85px] xl:mr-[19px] zero:w-[50px] zero:mr-[5px] float-left  no-drag"
                     alt="theme"
                   />
-                  <span className="whitespace-pre-line break-all">
+                  <span className="xl:block zero:hidden whitespace-pre-line break-all">
                     뮤지엄은 다양한 아티스트의 개성넘치는 작품을 온라인으로 쉽게
                     즐길 수 있는 플랫폼이다. 개별 아티스트의 기존, 새로운 작품을
                     몰입감 넘치는 Interactive Web Art로 전환해 기존 작품에
@@ -107,40 +108,66 @@ export default function NavBar() {
                     활동을한다. 띰뮤지엄은 평면, 입체예술, 공예, 시각, 산업,
                     공간디자인 등 다양한 기반의 아티스트와 협업하며, 그들의
                     작품스타일에 최적화된 도메인을 만들어 예술활동을 서포트
-                    한다. 단순웹기반 전시 뿐만 아니라, 매해 시즌에 맞춰 오프라인
-                    전시 및 팝업스토를 개최할 계획이다. 또한 작품의 특성에 맞는
+                    한다. 웹기반 전시 뿐만 아니라, 매해 시즌에 맞춰 오프라인
+                    전시 및 팝업스토를 개최할 계획하며, 작품의 특성에 맞는
                     제품을 제작 및 유통하는 펀딩활동을 통해 작가를 서포트한다.
                   </span>
+                  <span className="xl:hidden zero:block whitespace-pre-line break-all">
+                    뮤지엄은 다양한 아티스트의 개성넘치는 작품을 온라인으로 쉽게
+                    즐길 수 있는 플랫폼이다. 개별 아티스트의 기존, 새로운 작품을
+                    몰입감 넘치는 Interactive Web Art로 전환해 기존 작품에
+                    가치를 더하는 프로젝트를 진행한다. 웹기반 전시 뿐만 아니라,
+                    매해 시즌에 맞춰 오프라인 전시 및 팝업스토를 개최할
+                    계획하며, 작품의 특성에 맞는 제품을 제작 및 유통하는
+                    펀딩활동을 통해 작가를 서포트한다.
+                  </span>
                 </div>
-                <div className="whitespace-pre-line break-all mt-[32px]">
+                <div className="whitespace-pre-line break-all lx:mt-[32px] zero:mt-[10px] ">
                   Theme Museum is a platform where you can easily enjoy the
                   unique works of various artists online. It will convert
                   existing and new works of individual artists into immersive
                   Interactive Web Art to carry out a project to add value to
-                  existing works. We call this Digitforming, and we add digital
-                  technology to existing static works to add vitality (vivre).
-                  In addition to simple web-based exhibitions, it plans to hold
-                  offline exhibitions and pop-up stores every year in time for
-                  the season.
+                  existing works. In addition to web-based exhibitions, We are
+                  planning to hold offline exhibitions and pop-up stores every
+                  season, and supports artists through funding activities that
+                  produce and distribute products tailored to the
+                  characteristics of the work.
                 </div>
               </AboutContents>
-              <div className="mt-[70px]">
+              <div className="xl:mt-[70px] xl:block zero:mt-[20px] zero:hidden">
                 <AboutContents title="Production">
                   <Image
                     src={VivlePark}
                     alt="production"
-                    className="lg:w-[61px] zero:w-[61px]  no-drag"
+                    className="xl:w-[61px] zero:w-[40px]  no-drag"
                   />
                 </AboutContents>
               </div>
-              <div className="mt-[43px]">
+              <div className="xl:mt-[43px] xl:block zero:mt-[20px] zero:hidden">
                 <AboutContents title="Sponsor">
                   <Link
                     href="https://artson.arko.or.kr/artson/"
-                    className="lg:w-[350px] zero:w-[100px] "
                     target="_blank"
                   >
-                    <Image src={Supporter} alt="support" className="no-drag" />
+                    <Image
+                      src={Supporter}
+                      alt="support"
+                      className="xl:w-[350px] zero:w-[340px] no-drag"
+                    />
+                  </Link>
+                </AboutContents>
+              </div>
+              <div className="xl:mt-[70px] xl:hidden zero:mt-[20px] zero:flex ">
+                <AboutContents title="Sponsor & Production">
+                  <Link
+                    href="https://artson.arko.or.kr/artson/"
+                    target="_blank"
+                  >
+                    <Image
+                      src={SupporterLg}
+                      alt="support"
+                      className="xl:w-[350px] zero:w-[340px] no-drag"
+                    />
                   </Link>
                 </AboutContents>
               </div>

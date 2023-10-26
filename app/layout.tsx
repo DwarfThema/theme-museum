@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Noto_Sans, Nanum_Gothic } from "next/font/google";
+import { Inter, Noto_Sans, Roboto } from "next/font/google";
 import "./globals.css";
 
-const namuGothic = Nanum_Gothic({ weight: "400", subsets: ["latin"] });
+const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.theme-museum.com"),
@@ -57,7 +57,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={namuGothic.className}>{children}</body>
+      <body className={roboto.className}>{children}</body>
     </html>
   );
 }

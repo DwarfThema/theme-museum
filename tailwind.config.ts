@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        zero: "0px",
+      },
       colors: {
         white: "#FFFFFF",
         black: "#000000",

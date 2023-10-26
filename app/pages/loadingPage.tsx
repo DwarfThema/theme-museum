@@ -2,6 +2,7 @@ import Image from "next/image";
 import loadingImg from "../../public/Loading_Logo.png";
 import { Html, useProgress } from "@react-three/drei";
 import { useEffect, useState } from "react";
+import { isMobile } from "react-device-detect";
 
 export default function LoadingPage() {
   const { progress, loaded } = useProgress();
@@ -21,7 +22,7 @@ export default function LoadingPage() {
       <Image
         src={loadingImg}
         alt="LoadingImg"
-        className="mb-[20px] no-drag"
+        className="mb-[20px] no-drag h-fit zero:w-[300px] xl:w-[500px] "
         quality={50}
       />
       <svg
