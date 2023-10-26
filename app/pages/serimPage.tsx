@@ -39,7 +39,12 @@ const SerimPage: React.FC<ContentsProps> = ({ onMainLoading }) => {
           <div className="lg:mt-3 md:mt-3 sm:mt-2 flex ">
             <Link href="https://www.homeforestandfor-rest.com/" target="_blank">
               <button>
-                <Image src={Logo} alt="entrance" className="w-[185px] h-fit" />
+                <Image
+                  src={Logo}
+                  alt="entrance"
+                  className="w-[185px] h-fit"
+                  quality={30}
+                />
               </button>
             </Link>
           </div>

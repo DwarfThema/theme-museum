@@ -35,6 +35,7 @@ export default function NavBar() {
           src={mainLogo}
           alt="NavLogo"
           className="w-[150px] pt-10 pl-11 z-40 fixed top-0 left-0 no-drag"
+          quality={30}
         />
       </div>
       <motion.div

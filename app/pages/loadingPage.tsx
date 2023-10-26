@@ -22,7 +22,7 @@ export default function LoadingPage() {
         src={loadingImg}
         alt="LoadingImg"
         className="mb-[20px] no-drag"
-        quality={80}
+        quality={50}
       />
       <svg
         width="50px"
