@@ -5,9 +5,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import MainPage from "./pages/mainPage";
 import LoadingPage from "./pages/loadingPage";
+import DasomPage from "./pages/dasomPage";
 import NavBar from "./src/navBar";
+import DonggiPage from "./pages/donggiPage";
+import SerimPage from "./pages/serimPage";
+import JeongeunPage from "./pages/\bjeongeunPage";
+import { useProgress } from "@react-three/drei";
 
 export default function Home() {
+  const { loaded } = useProgress();
+
   const [loading, setLoading] = useState(true);
   const [visibleDiv, setVisibleDiv] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
@@ -135,7 +142,7 @@ export default function Home() {
 
   return (
     <main className="bg-black">
-      <NavBar />
+      <LoadingPage />
       <div
         className="relative w-screen h-screen overflow-hidden"
         onMouseDown={handleMouseDown}
@@ -158,79 +165,85 @@ export default function Home() {
           >
             <MainPage />
           </motion.div>
-          <motion.div
-            key="1"
-            className="w-full h-screen  flex justify-center items-center absolute top-0 left-0 bg-blue-800"
-            initial={{ y: "100%" }}
-            animate={{
-              y: visibleDiv === 1 ? "0%" : visibleDiv > 1 ? "-100%" : "100%",
-            }}
-            transition={transition}
-          >
-            {loading && (
-              <div className="inset-0 absolute flex items-center justify-center z-40  w-screen h-full"></div>
-            )}
-          </motion.div>
-          <motion.div
-            key="2"
-            className="w-full h-screen  flex justify-center items-center absolute top-0 left-0 bg-red-600"
-            initial={{ y: "100%" }}
-            animate={{
-              y: visibleDiv === 2 ? "0%" : visibleDiv > 2 ? "-100%" : "100%",
-            }}
-            transition={transition}
-          >
-            {loading && (
-              <div className="inset-0 absolute flex items-center justify-center z-40  w-screen h-full"></div>
-            )}
-          </motion.div>
-          <motion.div
-            key="3"
-            className="w-full h-screen  flex justify-center items-center absolute top-0 left-0 bg-yellow-600"
-            initial={{ y: "100%" }}
-            animate={{
-              y: visibleDiv === 3 ? "0%" : visibleDiv > 3 ? "-100%" : "100%",
-            }}
-            transition={transition}
-          >
-            {loading && (
-              <div className="inset-0 absolute flex items-center justify-center z-40  w-screen h-full"></div>
-            )}
-          </motion.div>
-          <motion.div
-            key="4"
-            className="w-full h-screen  flex justify-center items-center absolute top-0 left-0 bg-green-600"
-            initial={{ y: "100%" }}
-            animate={{
-              y: visibleDiv === 4 ? "0%" : visibleDiv > 4 ? "-100%" : "100%",
-            }}
-            transition={transition}
-          >
-            {loading && (
-              <div className="inset-0 absolute flex items-center justify-center z-40  w-screen h-full"></div>
-            )}
-          </motion.div>
+
+          {loaded >= 7 ? (
+            <>
+              <motion.div
+                key="1"
+                className="w-full h-screen  flex justify-center items-center absolute top-0 left-0 "
+                initial={{ y: "100%" }}
+                animate={{
+                  y:
+                    visibleDiv === 1 ? "0%" : visibleDiv > 1 ? "-100%" : "100%",
+                }}
+                transition={transition}
+              >
+                <DasomPage />
+              </motion.div>
+              <motion.div
+                key="2"
+                className="w-full h-screen  flex justify-center items-center absolute top-0 left-0 "
+                initial={{ y: "100%" }}
+                animate={{
+                  y:
+                    visibleDiv === 2 ? "0%" : visibleDiv > 2 ? "-100%" : "100%",
+                }}
+                transition={transition}
+              >
+                <DonggiPage />
+              </motion.div>
+              <motion.div
+                key="3"
+                className="w-full h-screen  flex justify-center items-center absolute top-0 left-0 "
+                initial={{ y: "100%" }}
+                animate={{
+                  y:
+                    visibleDiv === 3 ? "0%" : visibleDiv > 3 ? "-100%" : "100%",
+                }}
+                transition={transition}
+              >
+                <JeongeunPage />
+              </motion.div>
+              <motion.div
+                key="4"
+                className="w-full h-screen  flex justify-center items-center absolute top-0 left-0 "
+                initial={{ y: "100%" }}
+                animate={{
+                  y:
+                    visibleDiv === 4 ? "0%" : visibleDiv > 4 ? "-100%" : "100%",
+                }}
+                transition={transition}
+              >
+                <SerimPage />
+              </motion.div>
+            </>
+          ) : null}
         </AnimatePresence>
       </div>
 
-      <div className="absolute bottom-8 w-screen flex justify-center z-30">
-        <button onClick={handleClickDown}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 30 30"
-            strokeWidth="2"
-            stroke="white"
-            className="w-10 h-10 block"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-            />
-          </svg>
-        </button>
-      </div>
+      {loaded >= 7 ? (
+        <>
+          <div className="absolute bottom-8 w-screen flex justify-center z-30">
+            <button onClick={handleClickDown}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 30 30"
+                strokeWidth="2"
+                stroke="white"
+                className="w-10 h-10 block"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </button>
+          </div>
+          <NavBar />{" "}
+        </>
+      ) : null}
     </main>
   );
 }

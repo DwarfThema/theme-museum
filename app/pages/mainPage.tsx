@@ -24,7 +24,7 @@ export default function MainPage() {
         }}
         className="w-screen h-screen"
       >
-        <Suspense fallback={<LoadingPage />}>
+        <Suspense fallback={null}>
           <ambientLight intensity={Math.PI / 1} />
           <Environment files="/textures/hdri.hdr" background blur={1} />
           <SkyView />
