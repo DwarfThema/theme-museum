@@ -20,7 +20,7 @@ export default function MainPage() {
   }, [isMobile]);
 
   return (
-    <div className="bg-main-base w-full h-full flex justify-center items-center no-drag">
+    <div className="bg-blackbase w-full h-full flex justify-center items-center no-drag">
       <Canvas
         camera={{
           position: [0, 0, 0],

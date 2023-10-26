@@ -16,7 +16,7 @@ export default function LoadingPage() {
 
   return (
     <div
-      className={`bg-main-base w-screen h-screen flex justify-center items-center flex-col fixed no-drag
+      className={`bg-blackbase w-screen h-screen flex justify-center items-center flex-col fixed no-drag
           ${loading ? "opacity-0 z-0 hidden" : "opacity-100 z-50"}`}
     >
       <Image
