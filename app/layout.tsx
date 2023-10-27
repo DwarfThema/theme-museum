@@ -6,11 +6,11 @@ const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.theme-museum.com"),
-  title: "THEME-MUSEUM",
-  description: "THEME-MUSEUM by VIVLEPARK",
+  title: "띰 뮤지엄 THEME MUSEUM",
+  description: "띰 뮤지엄 THEME MUSEUM by VIVLEPARK",
   openGraph: {
-    title: "THEME-MUSEUM",
-    description: "THEME-MUSEUM by VIVLEPARK",
+    title: "띰 뮤지엄 THEME-MUSEUM",
+    description: "띰 뮤지엄 THEME MUSEUM by VIVLEPARK",
     url: "https://www.theme-museum.com",
     images: [
       {
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "THEME-MUSEUM",
-    description: "THEME-MUSEUM by VIVLEPARK",
+    title: "띰 뮤지엄 THEME MUSEUM",
+    description: "띰 뮤지엄 THEME MUSEUM by VIVLEPARK",
     creator: "JunhoPark(DwarfThema)",
     images: ["/thumbnail.jpeg"],
   },
