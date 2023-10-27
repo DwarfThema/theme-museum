@@ -7,7 +7,7 @@ import { isMobile } from "react-device-detect";
 interface ContentsProps {
   onMainLoading?: () => void;
 }
-const selimPage: React.FC<ContentsProps> = ({ onMainLoading }) => {
+const SelimPage: React.FC<ContentsProps> = ({ onMainLoading }) => {
   return (
     <div className="bg-blackbase w-screen h-screen flex justify-center xl:items-center lg:items-end zero:items-end user  no-drag">
       <VideoBackGround src="/videos/selim.mp4" onLoaded={onMainLoading} />
@@ -30,7 +30,7 @@ const selimPage: React.FC<ContentsProps> = ({ onMainLoading }) => {
         </div>
         <div className="xl:w-[782px] lg:w-fit  height650:hidden  xl:mt-7 lg:mt-3 lg:block zero:hidden ">
           <div className="text-base font-extralight">
-            {`집과 자연은 일상 속에서 지친 나에게 늘 흥미로운 존재이며, 위안과 안정을 준다. 작업 속 집과 자연물들은 일상 안에서의 조화로운 관계를 나타내는 것뿐만 아니라, 더 깊은 의미와 내면의 치유를 담아내며 나를 동심의 세계로 인도한다. 이러한 경험을 통해 내 작업은 나만의 자유로운 색채와 다양한 질감의 종이를 활용하여 일상 속 힐링을 순수하고 사랑스러운 분위기로 재해석한다.`}
+            {`집과 자연은 일상 속에서 지친 나에게 늘 흥미로운 존재이며, 위안과 안정을 준다. 집과 자연물은 일상 속에서 조화로운 관계를 나타낼 뿐만 아니라, 더 깊은 의미로서는 내면의 상태와 치유를 담아내며 동심의 세계로 인도하는 소중한 매개체이다. 이런 경험을 바탕으로 나는 일상 속 힐링을 순수하고 사랑스러운 분위기로 재해석 하며 자유로운 색채와 다양한 질감의 종이를 통해서 표현한다.`}
           </div>
           <div className="mt-7 font-semibold text-xl xl:block lg:hidden height750:hidden">
             DIGITFORMING
@@ -62,4 +62,4 @@ const selimPage: React.FC<ContentsProps> = ({ onMainLoading }) => {
   );
 };
 
-export default selimPage;
+export default SelimPage;

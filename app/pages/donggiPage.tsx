@@ -12,7 +12,7 @@ const DonggiPage: React.FC<ContentsProps> = ({ onMainLoading }) => {
       <VideoBackGround src="/videos/donggi.mp4" onLoaded={onMainLoading} />
       <div className="w-full h-screen absolute lg:bg-gradient-to-r zero:bg-gradient-to-t from-blackOpa via-blackSoftNext  to-transparent no-drag" />
       {/* 본문 */}
-      <div className="z-10 xl:xl:w-10/12 zero:w-11/12 zero:w-11/12 xl:mb-0 lg:mb-[100px] zero:mb-[80px] text-white">
+      <div className="z-10 xl:xl:w-10/12 zero:w-11/12 xl:mb-0 lg:mb-[100px] zero:mb-[80px] text-white">
         <div>
           <div className="lg:text-8xl zero:text-3xl font-semibold ">
             Dal Ma Gi

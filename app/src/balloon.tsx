@@ -60,9 +60,9 @@ export default function Balloon({ ...props }) {
   return (
     <>
       <Float
-        floatIntensity={0.5}
-        speed={0.7}
-        rotationIntensity={0.2}
+        floatIntensity={0.3}
+        speed={1.5}
+        rotationIntensity={0}
         floatingRange={[-0.3, 0.3]}
       >
         <group

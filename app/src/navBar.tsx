@@ -133,8 +133,13 @@ export default function NavBar() {
                   produce and distribute products tailored to the
                   characteristics of the work.
                 </div>
+                <Link href="https://open.kakao.com/o/s4YEMUOf" target="_blank">
+                  <button className="py-[1px] px-2 mt-[10px] border-black border-[1px] ">
+                    Contact
+                  </button>
+                </Link>
               </AboutContents>
-              <div className="xl:mt-[70px] xl:block zero:mt-[20px] zero:hidden">
+              <div className="xl:mt-[60px] xl:block zero:mt-[10px] zero:hidden">
                 <AboutContents title="Production">
                   <Image
                     src={VivlePark}
