@@ -1,16 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import VideoBackGround from "../src/VideoBackGround";
-import Logo from "../../public/textures/serim_logo.jpeg";
+import Logo from "../../public/textures/selim_logo.jpeg";
 import { isMobile } from "react-device-detect";
 
 interface ContentsProps {
   onMainLoading?: () => void;
 }
-const SerimPage: React.FC<ContentsProps> = ({ onMainLoading }) => {
+const selimPage: React.FC<ContentsProps> = ({ onMainLoading }) => {
   return (
     <div className="bg-blackbase w-screen h-screen flex justify-center xl:items-center lg:items-end zero:items-end user  no-drag">
-      <VideoBackGround src="/videos/serim.mp4" onLoaded={onMainLoading} />
+      <VideoBackGround src="/videos/selim.mp4" onLoaded={onMainLoading} />
       <div className="w-full h-screen absolute lg:bg-gradient-to-r zero:bg-gradient-to-t from-blackOpa via-blackSoftNext  to-transparent no-drag" />
       {/* 본문 */}
       <div className="z-10 xl:w-10/12 zero:w-11/12 xl:mb-0 lg:mb-[100px] zero:mb-[80px] text-white">
@@ -25,7 +25,7 @@ const SerimPage: React.FC<ContentsProps> = ({ onMainLoading }) => {
             </div>
           )}
           <div className="lg:text-xl lg:mt-2 zero:text-sm zero:mt-0 font-light mt-2">
-            by Serim Yang
+            by selim Yang
           </div>
         </div>
         <div className="xl:w-[782px] lg:w-fit  height650:hidden  xl:mt-7 lg:mt-3 lg:block zero:hidden ">
@@ -62,4 +62,4 @@ const SerimPage: React.FC<ContentsProps> = ({ onMainLoading }) => {
   );
 };
 
-export default SerimPage;
+export default selimPage;

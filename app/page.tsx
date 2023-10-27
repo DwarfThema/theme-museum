@@ -8,7 +8,7 @@ import LoadingPage from "./pages/loadingPage";
 import DasomPage from "./pages/dasomPage";
 import NavBar from "./src/navBar";
 import DonggiPage from "./pages/donggiPage";
-import SerimPage from "./pages/serimPage";
+import selimPage from "./pages/selimPage";
 import JeongeunPage from "./pages/\bjeongeunPage";
 import { useProgress } from "@react-three/drei";
 
@@ -214,7 +214,7 @@ export default function Home() {
                 }}
                 transition={transition}
               >
-                <SerimPage />
+                <selimPage />
               </motion.div>
             </>
           ) : null}
