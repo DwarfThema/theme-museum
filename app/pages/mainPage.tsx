@@ -69,12 +69,20 @@ function SkyView() {
 
   useFrame((state) => {
     state.camera.lookAt(-100, -7, -1);
-    //카메라 쉐이크 관련 코드
+
     state.camera.position.x = MathUtils.lerp(
       state.camera.position.x,
-      camzTarPos - state.mouse.x / 10,
+      camzTarPos,
       0.03
     );
+
+    //카메라 쉐이크 관련 코드
+    state.camera.position.z = MathUtils.lerp(
+      state.camera.position.z,
+      -1 + state.mouse.x / 10,
+      0.03
+    );
+
     state.camera.position.y = MathUtils.lerp(
       state.camera.position.y,
       -7 - state.mouse.y / 10,
