@@ -100,38 +100,39 @@ export default function NavBar() {
                     alt="theme"
                   />
                   <span className="xl:block zero:hidden whitespace-pre-line break-all">
-                    뮤지엄은 다양한 아티스트의 개성넘치는 작품을 온라인으로 쉽게
-                    즐길 수 있는 플랫폼이다. 개별 아티스트의 기존, 새로운 작품을
-                    몰입감 넘치는 Interactive Web Art로 전환해 기존 작품에
-                    가치를 더하는 프로젝트를 진행한다. Digitforming은 기존
-                    Static작품에 Digital기술을 더해 생동감(Vivre)더하는 활동을
-                    말한다. 띰뮤지엄은 평면, 입체예술, 공예, 시각, 산업,
-                    공간디자인 등 다양한 기반의 아티스트와 협업하며, 그들의
-                    작품스타일에 최적화된 도메인을 만들어 예술활동을 서포트
-                    한다. 웹 전시 뿐만 아니라, 매해 시즌에 맞춰 오프라인 전시 및
-                    팝업스토를 개최할 계획하며, 작품의 특성에 맞는 제품을 제작
-                    및 유통하는 펀딩활동을 통해 작가를 서포트한다.
+                    뮤지엄은 다양한 아티스트의 개성 넘치는 작품을 온라인으로
+                    쉽게 즐길 수 있는 플랫폼이다. 개별 아티스트의 기존, 새로운
+                    작품을 몰입감 넘치는 Interactive Web Art로 전환해 작품에
+                    가치를 더하는 프로젝트를 진행한다. <br />
+                    'Digitforming'은 기존 Static작품에 Digital기술을 더해
+                    생동감(Vivre) 더하는 활동을 말한다. 띰 뮤지엄은 평면,
+                    입체예술, 공예, 시각, 산업, 공간디자인 등 다양한 기반의
+                    아티스트와 협업하고, 그들의 작품스타일에 최적화된 도메인을
+                    만들어 예술활동을 서포트 한다. 웹 전시뿐만 아니라, 매해
+                    시즌에 맞춰 오프라인 전시 및 팝업스토어를 개최하며,
+                    펀딩활동을 통해 작품의 특성에 맞는 제품을 제작 및 유통해
+                    작가를 서포트한다.
                   </span>
                   <span className="xl:hidden zero:block whitespace-pre-line break-all">
-                    뮤지엄은 다양한 아티스트의 개성넘치는 작품을 온라인으로 쉽게
-                    즐길 수 있는 플랫폼이다. 개별 아티스트의 기존, 새로운 작품을
-                    몰입감 넘치는 Interactive Web Art로 전환해 기존 작품에
-                    가치를 더하는 프로젝트를 진행한다. 웹기반 전시 뿐만 아니라,
-                    매해 시즌에 맞춰 오프라인 전시 및 팝업스토를 개최할
-                    계획하며, 작품의 특성에 맞는 제품을 제작 및 유통하는
-                    펀딩활동을 통해 작가를 서포트한다.
+                    뮤지엄은 다양한 아티스트의 개성 넘치는 작품을 온라인으로
+                    쉽게 즐길 수 있는 플랫폼이다. 개별 아티스트의 기존, 새로운
+                    작품을 몰입감 넘치는 Interactive Web Art로 전환해 작품에
+                    가치를 더하는 프로젝트를 진행한다. 웹 전시뿐만 아니라, 매해
+                    시즌에 맞춰 오프라인 전시 및 팝업스토어를 개최하며,
+                    펀딩활동을 통해 작품의 특성에 맞는 제품을 제작 및 유통해
+                    작가를 서포트한다.
                   </span>
                 </div>
                 <div className="whitespace-pre-line break-all lx:mt-[32px] zero:mt-[10px] ">
-                  Theme Museum is a platform where you can easily enjoy the
-                  unique works of various artists online. It will convert
+                  'The Theme Museum' is a platform where you can easily enjoy
+                  the unique works of various artists online. It will convert
                   existing and new works of individual artists into immersive
-                  Interactive Web Art to carry out a project to add value to
-                  existing works. In addition to web-based exhibitions, We are
-                  planning to hold offline exhibitions and pop-up stores every
-                  season, and supports artists through funding activities that
-                  produce and distribute products tailored to the
-                  characteristics of the work.
+                  Interactive Web Art to carry out a project to add value to the
+                  work. In addition to web exhibitions, offline exhibitions and
+                  pop-up stores are held every year in time for the season, and
+                  through funding activities, products tailored to the
+                  characteristics of the work are produced and distributed to
+                  support artists.
                 </div>
                 <Link href="https://open.kakao.com/o/s4YEMUOf" target="_blank">
                   <button className="py-[1px] px-2 mt-[10px] border-black border-[1px] ">
