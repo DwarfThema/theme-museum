@@ -23,18 +23,13 @@ const JeongeunPage: React.FC<ContentsProps> = ({ onMainLoading }) => {
         </div>
         <div className="xl:w-[782px] lg:w-fit  height650:hidden  xl:mt-7 lg:mt-3 lg:block zero:hidden ">
           <div className="text-base font-extralight">
-            {`인간의 기억과 향수(Nostalgia)에 대한 리서치를 기반으로 다양한 매체를 활용하여 작업한다.
-'기억'은 뇌 과학, 심리학, 철학 등 다양한 분야에서 연구되고 있으며, 그 복잡성과 신비로움으로 인해 계속해서 우리를 매료시키는 주제 중 하나이다. 내가 창작을 하는 행위는 기억의 복잡성을 직접 경험하고 탐구하는 과정이다.`}
+            {`2 EURO 프로젝트는 여행을 다니며 남은 동전에서 시작되었다. 여행중에 성당안에 들어가서 동전하나를 넣고 소원빌던 기억이 있다. 그 순간을 포착하여 집으로 가져오고싶은 마음에 성당안의 천사들을 접어서 숨겨 집으로 데려왔다. 집에서 동전을 구멍에 놓고 소원을 비니 그 순간 불이 켜지며 천사들이 문을 닫아버렸다.`}
           </div>
           <div className="mt-7 font-semibold text-xl xl:block lg:hidden height750:hidden">
             DIGITFORMING
           </div>
           <div className="mt-1 xl:block lg:hidden height750:hidden">
-            {`«MSC(Memory Service Centre)»는 인터랙티브 웹 아트로, ‘기억’을 가상
-            서비스의 형태로 제공한다. 이를 통해 사용자들은 기억의 형성, 저장,
-            회상, 그리고 기억 손실 등 다양한 관점에서 ‘기억’에 대해 사유할 수
-            있는 기회를 만나게 된다. 빠르게 진화하는 디지털 기술과 의학의 발전의
-            시대에서 우리 기억의 가치와 본질을 조명해 보길 바란다.`}
+            {`열려있던 구조물은 동전으로 완성되며 닫힌다. 실제로 움직이는 모습을 인터렉션을통해 작업의 개연성과 과정에 생동감을 불어넣을 수 있다.`}
           </div>
         </div>
         <div className="xl:mt-7 lg:mt-0 zero:mt-0">
