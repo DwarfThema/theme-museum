@@ -104,8 +104,8 @@ export default function NavBar() {
                     쉽게 즐길 수 있는 플랫폼이다. 개별 아티스트의 기존, 새로운
                     작품을 몰입감 넘치는 Interactive Web Art로 전환해 작품에
                     가치를 더하는 프로젝트를 진행한다. <br />
-                    'Digitforming'은 기존 Static작품에 Digital기술을 더해
-                    생동감(Vivre) 더하는 활동을 말한다. 띰 뮤지엄은 평면,
+                    &apos;Digitforming&apos;은 기존 Static작품에 Digital기술을
+                    더해 생동감(Vivre) 더하는 활동을 말한다. 띰 뮤지엄은 평면,
                     입체예술, 공예, 시각, 산업, 공간디자인 등 다양한 기반의
                     아티스트와 협업하고, 그들의 작품스타일에 최적화된 도메인을
                     만들어 예술활동을 서포트 한다. 웹 전시뿐만 아니라, 매해
@@ -124,15 +124,15 @@ export default function NavBar() {
                   </span>
                 </div>
                 <div className="whitespace-pre-line break-all lx:mt-[32px] zero:mt-[10px] ">
-                  'The Theme Museum' is a platform where you can easily enjoy
-                  the unique works of various artists online. It will convert
-                  existing and new works of individual artists into immersive
-                  Interactive Web Art to carry out a project to add value to the
-                  work. In addition to web exhibitions, offline exhibitions and
-                  pop-up stores are held every year in time for the season, and
-                  through funding activities, products tailored to the
-                  characteristics of the work are produced and distributed to
-                  support artists.
+                  &apos;The Theme Museum&apos; is a platform where you can
+                  easily enjoy the unique works of various artists online. It
+                  will convert existing and new works of individual artists into
+                  immersive Interactive Web Art to carry out a project to add
+                  value to the work. In addition to web exhibitions, offline
+                  exhibitions and pop-up stores are held every year in time for
+                  the season, and through funding activities, products tailored
+                  to the characteristics of the work are produced and
+                  distributed to support artists.
                 </div>
                 <Link href="https://open.kakao.com/o/s4YEMUOf" target="_blank">
                   <button className="py-[1px] px-2 mt-[10px] border-black border-[1px] ">
