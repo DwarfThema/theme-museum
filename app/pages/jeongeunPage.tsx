@@ -15,7 +15,7 @@ const JeongeunPage: React.FC<ContentsProps> = ({ onMainLoading }) => {
       <div className="z-10 xl:w-10/12 zero:w-11/12 xl:mb-0 lg:mb-[100px] zero:mb-[80px] text-white">
         <div>
           <div className="lg:text-8xl zero:text-3xl font-semibold ">
-            2 Euro Project
+            2 Euro Projekt
           </div>
           <div className="lg:text-xl lg:mt-2 zero:text-sm zero:mt-0 font-light mt-2">
             by Jeongeun Park
