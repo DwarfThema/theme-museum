@@ -2,10 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Noto_Sans, Roboto } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
-import Script from "next/script";
-import { useRouter } from "next/router";
-import { useEffect } from "react";
-import * as gtag from "../libs/cli/gtag";
+import GoogleAnalytics from "./src/googleAnalytics";
 
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
@@ -60,43 +57,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const router = useRouter();
-  useEffect(() => {
-    const handleRouteChange = (url: any) => {
-      gtag.pageview(url);
-    };
-    router.events.on("routeChangeComplete", handleRouteChange);
-    router.events.on("hashChangeComplete", handleRouteChange);
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-      router.events.off("hashChangeComplete", handleRouteChange);
-    };
-  }, [router.events]);
-  // GA 설정 끝
-
   return (
     <html lang="en">
       <body className={roboto.className}>
+        <GoogleAnalytics />
         {children}
-        <Script
-          strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_MEASUREMENT_ID}`}
-        />
-        <Script
-          id="gtag-init"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '${gtag.GA_MEASUREMENT_ID}', {
-          page_path: window.location.pathname,
-        });
-      `,
-          }}
-        />
-        <Analytics />
       </body>
     </html>
   );
