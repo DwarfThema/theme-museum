@@ -8,7 +8,7 @@ import Supporter from "../../public/Supporter_sm.png";
 import SupporterLg from "../../public/Supporter_lg.png";
 import VivlePark from "../../public/Vivlepark.png";
 import ThemeImg from "../../public/Theme.png";
-import { useProgress } from "@react-three/drei";
+import instImg from "../../public/instalogo.png";
 
 export default function NavBar() {
   const [isOpen, toggleOpen] = useCycle(false, true);
@@ -134,11 +134,27 @@ export default function NavBar() {
                   to the characteristics of the work are produced and
                   distributed to support artists.
                 </div>
-                <Link href="https://open.kakao.com/o/s4YEMUOf" target="_blank">
-                  <button className="py-[1px] px-2 mt-[10px] border-black border-[1px] ">
-                    Contact
-                  </button>
-                </Link>
+                <div className="flex items-center mt-[10px]">
+                  <Link
+                    href="https://www.instagram.com/theme_museum/"
+                    target="_blank"
+                  >
+                    <Image
+                      src={instImg}
+                      alt="insta"
+                      quality={50}
+                      className="w-[25px]"
+                    />
+                  </Link>
+                  <Link
+                    href="https://open.kakao.com/o/s4YEMUOf"
+                    target="_blank"
+                  >
+                    <button className="py-[1px] px-2 mx-2 border-black border-[1px] ">
+                      Contact
+                    </button>
+                  </Link>
+                </div>
               </AboutContents>
               <div className="xl:mt-[60px] xl:block zero:mt-[10px] zero:hidden">
                 <AboutContents title="Production">
