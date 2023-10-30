@@ -61,6 +61,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={roboto.className}>
         <GoogleAnalytics />
+        <Analytics />
         {children}
       </body>
     </html>

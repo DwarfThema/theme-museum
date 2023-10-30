@@ -1,13 +1,11 @@
-export const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
+export const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID as string;
 
-// https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 export const pageview = (url: URL) => {
-  window.gtag("config", GA_MEASUREMENT_ID as string, {
+  window.gtag("config", GA_MEASUREMENT_ID, {
     page_path: url,
   });
 };
 
-// https://developers.google.com/analytics/devguides/collection/gtagjs/events
 export const event = (
   action: Gtag.EventNames,
   { event_category, event_label, value }: Gtag.EventParams
@@ -15,6 +13,6 @@ export const event = (
   window.gtag("event", action, {
     event_category,
     event_label,
-    value,
+    value: value,
   });
 };
