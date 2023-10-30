@@ -92,7 +92,7 @@ export default function NavBar() {
             />
             <div className="xl:flex zero:hidden w-[88px] h-full " />
             <div className="xl:w-[577px] xl:py-0 zero:w-[300px] zero:py-[80px] h-full items-start justify-center flex flex-col text-black">
-              <AboutContents title="about">
+              <AboutContents title="About">
                 <div className="text-[16px] font-extralight">
                   <Image
                     src={ThemeImg}
