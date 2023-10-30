@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "띰 뮤지엄 THEME MUSEUM",
     description: "띰 뮤지엄 THEME MUSEUM by VIVLEPARK",
     creator: "JunhoPark(DwarfThema)",
-    images: ["/thumbnail.jpeg"],
+    images: ["/thumbnail.jpg"],
   },
   robots: {
     index: false,
