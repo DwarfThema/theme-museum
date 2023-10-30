@@ -29,7 +29,7 @@ const JeongeunPage: React.FC<ContentsProps> = ({ onMainLoading }) => {
             DIGITFORMING
           </div>
           <div className="mt-1 xl:block lg:hidden height750:hidden">
-            {`열려있던 구조물은 동전으로 완성되며 닫힌다. 실제로 움직이는 모습을 인터렉션을통해 작업의 개연성과 과정에 생동감을 불어넣을 수 있다.`}
+            {`열려있던 구조물은 동전으로 완성되며 닫힌다. 실제로 움직이는 모습을 인터렉션을 통해 작업의 개연성과 과정에 생동감을 불어넣을 수 있다.`}
           </div>
         </div>
         <div className="xl:mt-7 lg:mt-0 zero:mt-0">
