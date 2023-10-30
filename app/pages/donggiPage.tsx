@@ -24,7 +24,7 @@ const DonggiPage: React.FC<ContentsProps> = ({ onMainLoading }) => {
         <div className="xl:w-[782px] lg:w-fit  height650:hidden  xl:mt-7 lg:mt-3 lg:block zero:hidden ">
           <div className="text-base font-extralight">
             {`동쪽 지평에서 둥근 달이 솟아오르기 시작하면 사람들은 저마다 소원을 빈다. 과거부터 달은 풍요를 상징한다. 그 달을 바라보면 토끼가 방아찧는 모습이 보인다. 계묘년을 맞아 몽환적 공간에서 달과 함께 뛰어노는 토끼의 형상을 표현하고자 했다.
- 나는 매일 달을 맞이한다. 무수히 떠다니는 작업들과 하나의 달 그리고 토끼들이 보이는 이 공간은 작업의 형상을 계속 쫒는 나의 매일이며 사고의 순간이다.`}
+ 나는 매일 달을 맞이한다. 무수히 떠다니는 작업들과 하나의 달 그리고 토끼들이 보이는 이 공간은 작업의 형상을 계속 쫓는 나의 매일이며 사고의 순간이다.`}
           </div>
           <div className="mt-7 font-semibold text-xl xl:block lg:hidden height750:hidden">
             DIGITFORMING
