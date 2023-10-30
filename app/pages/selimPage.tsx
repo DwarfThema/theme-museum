@@ -17,11 +17,11 @@ const SelimPage: React.FC<ContentsProps> = ({ onMainLoading }) => {
         <div>
           {isMobile ? (
             <div className="lg:text-8xl zero:text-3xl font-semibold ">
-              Home: Forest <br /> And For-Rest
+              Home:&nbspForest <br /> And For-Rest
             </div>
           ) : (
             <div className="lg:text-8xl zero:text-3xl font-semibold ">
-              Home:Forest And For-Rest
+              Home:&nbsp;Forest And For-Rest
             </div>
           )}
           <div className="lg:text-xl lg:mt-2 zero:text-sm zero:mt-0 font-light mt-2">
