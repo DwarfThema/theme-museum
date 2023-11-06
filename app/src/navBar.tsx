@@ -9,6 +9,7 @@ import SupporterLg from "../../public/Supporter_lg.png";
 import VivlePark from "../../public/Vivlepark.png";
 import ThemeImg from "../../public/Theme.png";
 import instImg from "../../public/instalogo.png";
+import InstaLink from "@/components/instaLink";
 
 export default function NavBar() {
   const [isOpen, toggleOpen] = useCycle(false, true);
@@ -135,17 +136,7 @@ export default function NavBar() {
                   distributed to support artists.
                 </div>
                 <div className="flex items-center mt-[10px]">
-                  <Link
-                    href="https://www.instagram.com/theme_museum/"
-                    target="_blank"
-                  >
-                    <Image
-                      src={instImg}
-                      alt="insta"
-                      quality={50}
-                      className="w-[25px]"
-                    />
-                  </Link>
+                  <InstaLink userName="theme_museum" />
                   <Link
                     href="https://open.kakao.com/o/s4YEMUOf"
                     target="_blank"

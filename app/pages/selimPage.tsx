@@ -3,6 +3,8 @@ import Link from "next/link";
 import VideoBackGround from "../src/VideoBackGround";
 import Logo from "../../public/textures/selim_logo.jpeg";
 import { isMobile } from "react-device-detect";
+import instImg from "../../public/instalogo.png";
+import InstaLink from "@/components/instaLink";
 
 interface ContentsProps {
   onMainLoading?: () => void;
@@ -24,8 +26,14 @@ const SelimPage: React.FC<ContentsProps> = ({ onMainLoading }) => {
               Home:&nbsp;Forest And For-Rest
             </div>
           )}
-          <div className="lg:text-xl lg:mt-2 zero:text-sm zero:mt-0 font-light mt-2">
-            by selim Yang
+          <div className="lg:text-xl lg:mt-2 zero:text-sm zero:mt-0 font-light mt-2 flex">
+            <div>by sillysally (Selim Yang)</div>
+            <InstaLink
+              userName="sillysally.official"
+              className="ml-1"
+              width={22}
+              bg
+            />
           </div>
         </div>
         <div className="xl:w-[782px] lg:w-fit  height650:hidden  xl:mt-7 lg:mt-3 lg:block zero:hidden ">

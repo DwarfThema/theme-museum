@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import VideoBackGround from "../src/VideoBackGround";
 import Logo from "../../public/textures/dasom_logo.jpeg";
+import InstaLink from "@/components/instaLink";
 
 interface ContentsProps {
   onMainLoading?: () => void;
@@ -17,8 +18,9 @@ const DasomPage: React.FC<ContentsProps> = ({ onMainLoading }) => {
           <div className="lg:text-8xl zero:text-3xl font-semibold ">
             Memory Service Centre
           </div>
-          <div className="lg:text-xl lg:mt-2 zero:text-sm zero:mt-0 font-light mt-2">
-            by Dasom Song
+          <div className="lg:text-xl lg:mt-2 zero:text-sm zero:mt-0 font-light mt-2 flex">
+            <div>by Dasom Song</div>
+            <InstaLink userName="eundoyo" className="ml-1" width={22} bg />
           </div>
         </div>
         <div className="xl:w-[782px] lg:w-fit  height650:hidden  xl:mt-7 lg:mt-3 lg:block zero:hidden ">
