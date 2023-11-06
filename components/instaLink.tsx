@@ -18,20 +18,10 @@ export default function InstaLink({
     <Link href={`https://www.instagram.com/${userName}`} target="_blank">
       {bg ? (
         <div className={`p-[3px] bg-white rounded-md ${className}`} {...props}>
-          <Image
-            src={instImg}
-            alt="insta"
-            quality={50}
-            className={`w-[${width}px]`}
-          />
+          <Image src={instImg} alt="insta" quality={50} width={width} />
         </div>
       ) : (
-        <Image
-          src={instImg}
-          alt="insta"
-          quality={50}
-          className={`w-[${width}px]`}
-        />
+        <Image src={instImg} alt="insta" quality={50} width={width} />
       )}
     </Link>
   );
