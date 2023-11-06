@@ -26,12 +26,12 @@ const SelimPage: React.FC<ContentsProps> = ({ onMainLoading }) => {
               Home:&nbsp;Forest And For-Rest
             </div>
           )}
-          <div className="lg:text-xl lg:mt-2 zero:text-sm zero:mt-0 font-light mt-2 flex">
+          <div className="lg:text-xl lg:mt-2 zero:text-sm zero:mt-0 font-light mt-2 flex items-center">
             <div>by sillysally (Selim Yang)</div>
             <InstaLink
               userName="sillysally.official"
-              className="ml-1"
-              width={22}
+              className="m-1 ml-2"
+              width={15}
               bg
             />
           </div>

@@ -18,9 +18,14 @@ const JeongeunPage: React.FC<ContentsProps> = ({ onMainLoading }) => {
           <div className="lg:text-8xl zero:text-3xl font-semibold ">
             2 Euro Projekt
           </div>
-          <div className="lg:text-xl lg:mt-2 zero:text-sm zero:mt-0 font-light mt-2 flex">
+          <div className="lg:text-xl lg:mt-2 zero:text-sm zero:mt-0 font-light mt-2 flex items-center">
             <div>by Jeongeun Park</div>
-            <InstaLink userName="jeongk___k" className="ml-1" width={22} bg />
+            <InstaLink
+              userName="jeongk___k"
+              className="m-1 ml-2"
+              width={15}
+              bg
+            />
           </div>
         </div>
         <div className="xl:w-[782px] lg:w-fit  height650:hidden  xl:mt-7 lg:mt-3 lg:block zero:hidden ">
