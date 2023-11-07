@@ -20,7 +20,7 @@ const DasomPage: React.FC<ContentsProps> = ({ onMainLoading }) => {
           </div>
           <div className="lg:text-xl lg:mt-2 zero:text-sm zero:mt-0 font-light mt-2 flex items-center">
             <div>by Dasom Song</div>
-            <InstaLink userName="eundoyo" className="m-1 ml-2" width={15} bg />
+            <InstaLink userName="sseeoul" className="m-1 ml-2" width={15} bg />
           </div>
         </div>
         <div className="xl:w-[782px] lg:w-fit  height650:hidden  xl:mt-7 lg:mt-3 lg:block zero:hidden ">
