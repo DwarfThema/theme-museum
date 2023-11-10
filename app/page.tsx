@@ -225,23 +225,40 @@ export default function Home() {
         <>
           <div className="absolute bottom-8 w-screen flex justify-center z-30">
             <button onClick={handleClickDown}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 30 30"
-                strokeWidth="2"
-                stroke="white"
-                className="w-10 h-10 block"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                />
-              </svg>
+              {visibleDiv === 4 ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 30 30"
+                  stroke-width="1.5"
+                  stroke="white"
+                  className="w-10 h-10 block"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 15.75l7.5-7.5 7.5 7.5"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 30 30"
+                  strokeWidth="2"
+                  stroke="white"
+                  className="w-10 h-10 block"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              )}
             </button>
           </div>
-          <NavBar />{" "}
+          <NavBar />
         </>
       ) : null}
     </main>
