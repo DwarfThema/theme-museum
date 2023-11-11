@@ -43,6 +43,7 @@ const JeongeunPage: React.FC<ContentsProps> = ({ onMainLoading }) => {
           <div className="xl:block lg:hidden zero:hidden">
             ⬇️ ENTRANCE BELOW ⬇️
           </div>
+          <div className="xl:hidden zero:flex">Link ⬇️</div>
           <div className="xl:mt-3 lg:mt-3 zero:mt-2 flex ">
             <Link href="https://www.2europroject.com/" target="_blank">
               <button>
