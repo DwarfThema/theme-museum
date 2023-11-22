@@ -81,18 +81,18 @@ export default function NavBar() {
           animate={isOpen ? "open" : "closed"}
           transition={{ duration: 1, type: "tween" }}
           variants={infoContents}
-          className={`w-screen h-screen z-40 flex justify-center items-center absolute ${
+          className={`w-screen z-40 xl:pt-[140px] zero:pt-[60px] flex justify-center absolute ${
             !isOpen ? `hidden` : `flex`
           }`}
         >
-          <div className="xl:w-[1200px] xl:h-[610px] xl:mt-0 xl:items-center zero:w-[300px] zero::h-full zero:h-screen zero:items-start flex ">
+          <div className="xl:w-[1200px] xl:h-[610px] xl:mt-0 xl:items-center zero:w-[300px] zero:h-screen zero:items-start flex ">
             <Image
               src={VerticalLogo}
               alt="logo"
               className="xl:flex zero:hidden w-[535px] h-fit no-drag"
             />
             <div className="xl:flex zero:hidden w-[88px] h-full " />
-            <div className="xl:w-[577px] xl:py-0 zero:w-[300px] zero:py-[80px] h-full items-start justify-center flex flex-col text-black">
+            <div className="xl:w-[577px] zero:w-[300px] h-full items-start justify-center flex flex-col text-black">
               <AboutContents title="About">
                 <div className="text-[16px] font-extralight">
                   <Image
@@ -106,7 +106,7 @@ export default function NavBar() {
                     작품을 몰입감 넘치는 Interactive Web Art로 전환해 작품에
                     가치를 더하는 프로젝트를 진행한다. <br />
                     &apos;Digitforming&apos;은 기존 Static작품에 Digital기술을
-                    더해 생동감(Vivre) 더하는 활동을 말한다. 띰 뮤지엄은 평면,
+                    더해 생동감 더하는 활동을 말한다. 띰 뮤지엄은 평면,
                     입체예술, 공예, 시각, 산업, 공간디자인 등 다양한 기반의
                     아티스트와 협업하고, 그들의 작품스타일에 최적화된 도메인을
                     만들어 예술활동을 서포트 한다. 웹 전시뿐만 아니라, 매해
