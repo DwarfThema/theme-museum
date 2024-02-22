@@ -4,7 +4,7 @@ import NavHamburger from "./navHamburger";
 
 export default async function NavBar() {
   return (
-    <div className={`fixed w-screen h-screen z-40 no-drag flex`}>
+    <div className={`fixed w-screen z-40 no-drag flex`}>
       <div>
         <Image
           src={mainLogo}
