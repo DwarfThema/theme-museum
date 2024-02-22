@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, Noto_Sans, Roboto } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
-import GoogleAnalytics from "./src/googleAnalytics";
+import GoogleAnalytics from "../components/src/googleAnalytics";
+import NavBar from "../components/src/navBar";
+import LoadingPage from "@/components/pages/loadingPage";
 
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
@@ -10,6 +12,8 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.theme-museum.com"),
   title: "띰뮤지엄 THEME MUSEUM",
   description: "띰뮤지엄 THEME MUSEUM by VIVLEPARK",
+  keywords:
+    "띰뮤지엄, 띰 뮤지엄, ThemeMuseum, Theme Museum, Theme-Museum, thememuseum, theme museum, Theme museum, webGL,webGPU, 웹지엘, 웹지피유, XR",
   openGraph: {
     title: "띰뮤지엄 THEME-MUSEUM",
     description: "띰뮤지엄 THEME MUSEUM by VIVLEPARK",
@@ -61,6 +65,8 @@ export default function RootLayout({
       <body className={roboto.className}>
         <GoogleAnalytics />
         <Analytics />
+        <NavBar />
+        <LoadingPage />
         {children}
       </body>
     </html>
