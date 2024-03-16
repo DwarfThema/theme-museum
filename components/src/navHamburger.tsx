@@ -11,6 +11,7 @@ import ThemeImg from "../../public/Theme.png";
 import instImg from "../../public/instalogo.png";
 import InstaLink from "@/components/instaLink";
 import Image from "next/image";
+import { isDesktop } from "react-device-detect";
 
 export default function NavHamburger() {
   const [isOpen, toggleOpen] = useCycle(false, true);
@@ -73,9 +74,9 @@ export default function NavHamburger() {
         animate={isOpen ? "open" : "closed"}
         transition={{ duration: 1, type: "tween" }}
         variants={infoContents}
-        className={`w-screen z-40 xl:pt-[95%] zero:pt-[50%] flex justify-center absolute ${
-          !isOpen ? `hidden` : `flex`
-        }`}
+        className={`w-screen z-40 xl:pt-[95%] ${
+          isDesktop ? `zero:pt-[0%]` : `zero:pt-[50%]`
+        } flex justify-center absolute ${!isOpen ? `hidden` : `flex`}`}
       >
         <div className="xl:w-[1200px] xl:h-[610px] xl:mt-0 xl:items-center zero:w-[300px] zero:h-screen zero:items-start flex ">
           <Image
