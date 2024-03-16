@@ -73,7 +73,7 @@ export default function NavHamburger() {
         animate={isOpen ? "open" : "closed"}
         transition={{ duration: 1, type: "tween" }}
         variants={infoContents}
-        className={`w-screen z-40 xl:pt-[95%] zero:pt-[0%] flex justify-center absolute ${
+        className={`w-screen z-40 xl:pt-[95%] zero:pt-[50%] flex justify-center absolute ${
           !isOpen ? `hidden` : `flex`
         }`}
       >
